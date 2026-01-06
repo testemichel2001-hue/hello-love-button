@@ -4,14 +4,19 @@ const Index = () => {
   const whatsappLink = "https://wa.me/5511976595423?text=Ol%C3%A1%20meu%20bem%20Vim%20do%20telegram%20%F0%9F%98%8D%F0%9F%A4%A4";
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-foreground mb-2">Jessy</h1>
+        <p className="text-xl text-muted-foreground">Vendedora de Conteúdo</p>
+      </div>
+      
       <a
         href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center gap-3 rounded-full bg-whatsapp px-8 py-4 text-lg font-semibold text-whatsapp-foreground shadow-lg transition-all duration-300 hover:bg-whatsapp-hover hover:scale-105 hover:shadow-xl"
+        className="group flex items-center gap-4 rounded-full bg-whatsapp px-12 py-6 text-xl font-bold text-whatsapp-foreground shadow-xl transition-all duration-300 hover:bg-whatsapp-hover hover:scale-105 hover:shadow-2xl"
       >
-        <MessageCircle className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />
+        <MessageCircle className="h-8 w-8 transition-transform duration-300 group-hover:scale-110" />
         Chamar no WhatsApp
       </a>
     </div>
